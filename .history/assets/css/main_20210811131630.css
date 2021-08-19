@@ -1,0 +1,16 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(to bottom, #f53e2d, #fe6433 );
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__item {
+    display: inline-block;
+}

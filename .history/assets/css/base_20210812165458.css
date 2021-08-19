@@ -1,0 +1,100 @@
+:root {
+    --white_color: #fff;
+    --black_color: #000;
+    --text_color: #333;
+    --primary_color: #ee4d2d;
+    --border_color: #dbdbdb;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.cursor-text {
+    cursor: text;
+}
+
+/* Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal__content {
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--white_color);
+    position: relative;
+    z-index: 1;
+}
+
+/* button style */
+.btn {
+    min-width: 142px;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 9px 0;
+    cursor: pointer;
+    color: var(--text_color);
+}
+
+.btn-s {
+    padding: 7px 0;
+}
+
+.btn.btn-normal:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary_color);
+    color: var(--white_color);
+}
+
+.btn.btn--disabled {
+    background-color: #c9c8c8;
+    color: #858585;
+    cursor: default;
+}
